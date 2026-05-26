@@ -1,137 +1,122 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="kk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Услуги и Цены | MASTER ASTANA</title>
-  <style>
-    /* Базалық стильдер */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #1a1a1a;
-      padding: 20px;
-      text-align: center;
-    }
-    .logo {
-      color: #fff;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .logo span {
-      color: #ff9900;
-    }
-    nav {
-      margin-top: 15px;
-    }
-    .nav-btn {
-      color: #fff;
-      text-decoration: none;
-      padding: 8px 16px;
-      margin: 0 5px;
-      border-radius: 4px;
-      transition: 0.3s;
-    }
-    .nav-btn:hover, .nav-btn.active {
-      background-color: #ff9900;
-      color: #1a1a1a;
-    }
-    .container {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #1a1a1a;
-      border-bottom: 2px solid #ff9900;
-      padding-bottom: 10px;
-    }
-    /* Кесте стильдері */
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 15px;
-    }
-    th, td {
-      padding: 12px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-    }
-    th {
-      background-color: #1a1a1a;
-      color: white;
-    }
-    tr:hover {
-      background-color: #f9f9f9;
-    }
-    .price {
-      font-weight: bold;
-      color: #ff9900;
-    }
-    footer {
-      background-color: #1a1a1a;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-      font-size: 14px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Master Astana — Қызметтер мен бағалар</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <div class="logo">MASTER <span>ASTANA</span></div>
-    <nav>
-      <a href="index.html" class="nav-btn">Главная</a>
-      <a href="services.html" class="nav-btn active">Услуги и цены</a>
-      <a href="contacts.html" class="nav-btn">Контакты</a>
-    </nav>
-  </header>
-
-  <div class="container">
-    <h2>Наши услуги и прайс-лист</h2>
-    <p>Выполняем профессиональные сантехнические и сварочные работы любой сложности в Астане. Работаем на совесть!</p>
-    
-    <table>
-      <thead>
-        <tr>
-          <th>Вид работы</th>
-          <th>Стоимость</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Сварочные работы (монтаж труб, отопление)</td>
-          <td class="price">от 15 000 тг</td>
-        </tr>
-        <tr>
-          <td>Монтаж и замена сантехники под ключ</td>
-          <td class="price">договорная</td>
-        </tr>
-        <tr>
-          <td>Установка радиаторов отопления</td>
-          <td class="price">от 10 000 тг</td>
-        </tr>
-        <tr>
-          <td>Прокладка инженерных сетей</td>
-          <td class="price">от 25 000 тг</td>
-        </tr>
-      </tbody>
-    </table>
+<nav class="nav">
+  <div class="nav__inner container">
+    <a href="index.html" class="nav__logo">
+      <span class="nav__logo-name">Master Astana</span>
+      <span class="nav__logo-sub">Кәсіби Шебер · Астана</span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="index.html">Басты бет</a></li>
+      <li><a href="services.html" class="active">Қызметтер</a></li>
+      <li><a href="contacts.html">Байланыс</a></li>
+    </ul>
+    <a href="tel:+77001234567" class="nav__cta">📞 +7 700 123 45 67</a>
+    <div class="nav__hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
   </div>
+</nav>
 
-  <footer>
-    <p>© 2026 MASTER ASTANA. ИП ЮСУПОВ. Все права защищены.</p>
-  </footer>
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label">Не істей аламыз</span>
+    <h1>Біздің <span style="color:var(--gold)">қызметтер</span></h1>
+    <span class="gold-line"></span>
+    <p style="color:var(--muted); margin-top:20px; max-width:560px; font-size:1rem;">
+      Кез келген күрделіліктегі жұмысты орындаймыз. Тұрмыстық шарттан бастап өнеркәсіптік объектіге дейін.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-card__icon">⚡</div>
+        <h3 class="service-card__title">Электр дәнекерлеу</h3>
+        <p class="service-card__desc">Болат, нержавейка, алюминий конструкцияларды дәнекерлеу. MMA, MIG/MAG, TIG технологиялары.</p>
+        <div class="service-card__price">бастап 3 500 ₸/сағ</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">🔥</div>
+        <h3 class="service-card__title">Газбен кесу</h3>
+        <p class="service-card__desc">Ацетилен-оттегімен кесу, плазмалық кесу. Күрделі пішіндерді дәл кесу.</p>
+        <div class="service-card__price">бастап 2 000 ₸/сағ</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">🚿</div>
+        <h3 class="service-card__title">Сантехника монтажы</h3>
+        <p class="service-card__desc">Су жүйесін орнату, жөндеу. Ванна, унитаз, раковина. Полипропилен және металл-пластик құбырлар.</p>
+        <div class="service-card__price">бастап 5 000 ₸/нүкте</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">🌡️</div>
+        <h3 class="service-card__title">Жылыту жүйесі</h3>
+        <p class="service-card__desc">Радиатор орнату, алмастыру. Жылыту контурын монтаждау. Теплый пол орнату.</p>
+        <div class="service-card__price">бастап 8 000 ₸/радиатор</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">💡</div>
+        <h3 class="service-card__title">Электр монтажы</h3>
+        <p class="service-card__desc">Розетка, выключатель орнату. Электр щитін жинау. Жарықтандыру жүйесі.</p>
+        <div class="service-card__price">бастап 1 500 ₸/нүкте</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">🚪</div>
+        <h3 class="service-card__title">Темір есік, ворота</h3>
+        <p class="service-card__desc">Темір есік жасау, орнату. Автоматты ворота монтажы. Заборлар мен қоршаулар.</p>
+        <div class="service-card__price">бастап 45 000 ₸</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-name">Master Astana</div>
+        <p class="footer__brand-desc">Астана қаласы бойынша кәсіби сварка, сантехника, электр монтажы қызметтері.</p>
+      </div>
+      <div>
+        <div class="footer__heading">Навигация</div>
+        <ul class="footer__links">
+          <li><a href="index.html">Басты бет</a></li>
+          <li><a href="services.html">Қызметтер</a></li>
+          <li><a href="contacts.html">Байланыс</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__heading">Байланыс</div>
+        <div class="footer__contact-item">📞 +7 700 123 45 67</div>
+        <div class="footer__contact-item">📍 Астана, Есіл ауданы</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const links = document.querySelector('.nav__links');
+    if (links) links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+  }
+</script>
 
 </body>
 </html>
