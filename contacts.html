@@ -1,166 +1,108 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="kk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Контакты | MASTER ASTANA</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #1a1a1a;
-      padding: 20px;
-      text-align: center;
-    }
-    .logo {
-      color: #fff;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .logo span {
-      color: #ff9900;
-    }
-    nav {
-      margin-top: 15px;
-    }
-    .nav-btn {
-      color: #fff;
-      text-decoration: none;
-      padding: 8px 16px;
-      margin: 0 5px;
-      border-radius: 4px;
-      transition: 0.3s;
-    }
-    .nav-btn:hover, .nav-btn.active {
-      background-color: #ff9900;
-      color: #1a1a1a;
-    }
-    .container {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #1a1a1a;
-      border-bottom: 2px solid #ff9900;
-      padding-bottom: 10px;
-    }
-    .contact-info {
-      margin-top: 20px;
-      font-size: 16px;
-      line-height: 1.6;
-    }
-    .contact-item {
-      margin-bottom: 15px;
-    }
-    .contact-item strong {
-      color: #1a1a1a;
-    }
-    /* Батырмалар стилі */
-    .btn-group {
-      margin-top: 25px;
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-    .action-btn {
-      display: inline-block;
-      padding: 12px 24px;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    .btn-call { background-color: #ff9900; color: #1a1a1a; }
-    .btn-call:hover { background-color: #e08800; }
-    .btn-wa { background-color: #25D366; }
-    .btn-wa:hover { background-color: #1ebd58; }
-    .btn-2gis { background-color: #00b2ff; }
-    .btn-2gis:hover { background-color: #009ce0; }
-    
-    /* Карта үшін контейнер */
-    .map-container {
-      margin-top: 30px;
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      padding-top: 56.25%; /* 16:9 Пропорция */
-      border-radius: 8px;
-      border: 1px solid #ddd;
-    }
-    .map-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-    footer {
-      background-color: #1a1a1a;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-      font-size: 14px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Master Astana — Байланыс</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <div class="logo">MASTER <span>ASTANA</span></div>
-    <nav>
-      <a href="index.html" class="nav-btn">Главная</a>
-      <a href="services.html" class="nav-btn">Услуги и цены</a>
-      <a href="contacts.html" class="nav-btn active">Контакты</a>
-    </nav>
-  </header>
-
-  <div class="container">
-    <h2>Наши контакты</h2>
-    <p>Свяжитесь с нами для консультации или вызова мастера на объект. Мы всегда на связи!</p>
-    
-    <div class="contact-info">
-      <div class="contact-item">
-        <strong>Телефон для связи:</strong> <a href="tel:+77472465381" style="color: #ff9900; text-decoration: none; font-weight: bold;">+7 747 246-53-81</a>
-      </div>
-      <div class="contact-item">
-        <strong>Адрес цеха:</strong> г. Астана, ул. Көкарал, 1
-      </div>
-      <div class="contact-item">
-        <strong>Режим работы:</strong> Понедельник - Суббота, с 09:00 до 19:00
-      </div>
-      <div class="contact-item">
-        <strong>Юридические данные:</strong> ИП ЮСУПОВ | БИН 850304300645
-      </div>
-    </div>
-
-    <div class="btn-group">
-      <a href="tel:+77472465381" class="action-btn btn-call">📞 Позвонить</a>
-      <a href="https://wa.me/77472465381" target="_blank" class="action-btn btn-wa">💬 Написать в WhatsApp</a>
-      <a href="https://2gis.kz/astana/search/%D1%83%D0%BB.%20%D0%9A%D1%96%D0%BA%D0%B0%D1%80%D0%B0%D0%BB%2C%201" target="_blank" class="action-btn btn-2gis">📍 Открыть в 2GIS</a>
-    </div>
-
-    <div class="map-container">
-      <iframe src="https://yandex.ru/map-widget/v1/?ll=71.498421%2C51.191421&z=15&mode=search&text=%D0%B1%D0%B0%D0%B9%D1%82%D1%81%D1%82%D1%83%D1%80%D1%81%D1%83%D0%BD%D0%BE%D0%B2%D0%B0" allowfullscreen="true"></iframe>
+<nav class="nav">
+  <div class="nav__inner container">
+    <a href="index.html" class="nav__logo">
+      <span class="nav__logo-name">Master Astana</span>
+      <span class="nav__logo-sub">Кәсіби Шебер · Астана</span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="index.html">Басты бет</a></li>
+      <li><a href="services.html">Қызметтер</a></li>
+      <li><a href="contacts.html" class="active">Байланыс</a></li>
+    </ul>
+    <a href="tel:+77001234567" class="nav__cta">📞 +7 700 123 45 67</a>
+    <div class="nav__hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
     </div>
   </div>
+</nav>
 
-  <footer>
-    <p>© 2026 MASTER ASTANA. ИП ЮСУПОВ. Работаем на совесть!</p>
-  </footer>
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label">Бізбен хабарласыңыз</span>
+    <h1>Байланыс <span style="color:var(--gold)">ақпараты</span></h1>
+    <span class="gold-line"></span>
+    <p style="color:var(--muted); margin-top:20px; max-width:520px; font-size:1rem;">
+      Сұрақ бар ма? Шебер шақыру керек пе? Хабарласыңыз — 30 минутта жауап береміз.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contacts-layout">
+
+      <div>
+        <h2 style="margin-bottom:28px;">Тікелей <span style="color:var(--gold)">байланыс</span></h2>
+        <div class="contacts-info__card">
+          <div class="contacts-info__item">
+            <div class="contacts-info__icon-wrap">📞</div>
+            <div>
+              <div class="contacts-info__label">Телефон</div>
+              <a href="tel:+77001234567" class="contacts-info__value" style="display:block;">+7 700 123 45 67</a>
+            </div>
+          </div>
+          <div class="contacts-info__item">
+            <div class="contacts-info__icon-wrap">📍</div>
+            <div>
+              <div class="contacts-info__label">Мекенжай</div>
+              <div class="contacts-info__value">Астана қаласы, Есіл ауданы</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3>Біздің орналасуымыз</h3>
+        <div class="map-wrap" style="margin-top:20px;">
+          <div style="padding:40px; text-align:center; background:var(--surface);">
+            Карта осы жерде көрсетіледі
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-name">Master Astana</div>
+        <p class="footer__brand-desc">Астана қаласы бойынша кәсіби қызметтер.</p>
+      </div>
+      <div>
+        <div class="footer__heading">Навигация</div>
+        <ul class="footer__links">
+          <li><a href="index.html">Басты бет</a></li>
+          <li><a href="services.html">Қызметтер</a></li>
+          <li><a href="contacts.html">Байланыс</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__heading">Байланыс</div>
+        <div class="footer__contact-item">📞 +7 700 123 45 67</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const links = document.querySelector('.nav__links');
+    if (links) links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+  }
+</script>
 
 </body>
 </html>
