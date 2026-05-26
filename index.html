@@ -1,55 +1,103 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="kk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MASTER ASTANA — ИП ЮСУПОВ</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
-  <style>
-    :root { --amber: #e8a020; --amber-light: #f5c050; --dark: #0a0a0a; --white: #f5f5f0; --gray: #888; }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Outfit', sans-serif; background: var(--dark); color: var(--white); }
-    
-    /* NAV */
-    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(10,10,10,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(232,160,32,0.2); padding: 0 40px; display: flex; align-items: center; justify-content: space-between; height: 72px; }
-    .nav-logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; letter-spacing: 4px; color: var(--white); }
-    .nav-logo span { color: var(--amber); }
-    .nav-links { display: flex; gap: 20px; }
-    .nav-btn { color: var(--gray); text-decoration: none; font-size: 0.85rem; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; padding: 8px 10px; transition: 0.3s; }
-    .nav-btn:hover, .nav-btn.active { color: var(--amber); }
-    .nav-phone { font-size: 0.95rem; font-weight: 600; color: var(--amber); text-decoration: none; border: 1px solid rgba(232,160,32,0.3); padding: 8px 18px; border-radius: 6px; }
-
-    /* HERO */
-    .hero { min-height: 100vh; display: grid; place-items: center; text-align: center; padding: 120px 40px; }
-    h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3.5rem, 8vw, 7rem); margin-bottom: 30px; }
-    h1 em { color: var(--amber); font-style: normal; }
-    .hero-cta { display: flex; gap: 16px; justify-content: center; }
-    .btn-primary { background: var(--amber); color: var(--dark); padding: 16px 36px; border-radius: 6px; font-weight: 700; text-decoration: none; text-transform: uppercase; }
-    .btn-secondary { background: transparent; border: 1px solid var(--amber); color: var(--amber); padding: 16px 36px; border-radius: 6px; text-decoration: none; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Master Astana — Кәсіби Шебер | Басты бет</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <nav>
-    <div class="nav-logo">MASTER <span>ASTANA</span></div>
-    <div class="nav-links">
-      <a href="index.html" class="nav-btn active">Главная</a>
-      <a href="services.html" class="nav-btn">Услуги и цены</a>
-      <a href="contacts.html" class="nav-btn">Контакты</a>
+<nav class="nav">
+  <div class="nav__inner container">
+    <a href="index.html" class="nav__logo">
+      <span class="nav__logo-name">Master Astana</span>
+      <span class="nav__logo-sub">Кәсіби Шебер · Астана</span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="index.html" class="active">Басты бет</a></li>
+      <li><a href="services.html">Қызметтер</a></li>
+      <li><a href="contacts.html">Байланыс</a></li>
+    </ul>
+    <a href="tel:+77001234567" class="nav__cta">📞 +7 700 123 45 67</a>
+    <div class="nav__hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
     </div>
-    <a href="tel:+77472465381" class="nav-phone">+7 747 246-53-81</a>
-  </nav>
+  </div>
+</nav>
 
-  <section class="hero">
-    <div class="hero-inner">
-      <h1>Профессиональная <br><em>сварка и сантехника</em></h1>
-      <p style="margin-bottom: 50px; color: var(--gray);">Работаем на совесть. Гарантия качества в Астане.</p>
-      <div class="hero-cta">
-        <a href="services.html" class="btn-primary">Наши услуги →</a>
-        <a href="https://wa.me/77472465381" target="_blank" class="btn-secondary">💬 WhatsApp</a>
+<section class="hero">
+  <div class="hero__bg">
+    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1600&h=900&fit=crop" alt="Сварка жұмысы" />
+  </div>
+  <div class="hero__overlay"></div>
+  <div class="hero__content container">
+    <div class="hero__badge">✦ Астанада 10+ жыл жұмыс тәжірибесі</div>
+    <h1 class="hero__title">
+      Үйіңіздегі кез келген<br />
+      <em>жұмысты шешеміз</em>
+    </h1>
+    <p class="hero__subtitle">
+      Сварка, сантехника, электр монтажы — жылдам, сапалы, кепілдікпен.
+      Астана бойынша шығамыз, материалдарды өзіміз әкелеміз.
+    </p>
+    <div class="hero__actions">
+      <a href="contacts.html" class="btn btn-primary">🔧 Шебер шақыру</a>
+      <a href="services.html" class="btn btn-outline">Қызметтер мен бағалар →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="about__grid">
+      <div class="about__image-wrap">
+        <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&h=600&fit=crop" alt="Шебер жұмыста" loading="lazy" />
+        <div class="about__image-badge">ISO 9001 · Сертификатталған</div>
+      </div>
+      <div class="about__text">
+        <span class="section-label">Біз туралы</span>
+        <h2>Сенімді шебер —<br /><span>нәтижеге кепілдік</span></h2>
+        <span class="gold-line"></span>
+        <ul class="about__list">
+          <li><span class="about__list-icon">✓</span>Барлық жұмыстарға 2 жыл жазбаша кепілдік береміз</li>
+          <li><span class="about__list-icon">✓</span>Лицензияланған мамандар, ресми шарт жасасамыз</li>
+          <li><span class="about__list-icon">✓</span>Жұмыс аяқталғаннан кейін ғана ақы аламыз</li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-name">Master Astana</div>
+        <p class="footer__brand-desc">Астана қаласы бойынша кәсіби шеберлік қызметтері.</p>
+      </div>
+      <div>
+        <div class="footer__heading">Навигация</div>
+        <ul class="footer__links">
+          <li><a href="index.html">Басты бет</a></li>
+          <li><a href="services.html">Қызметтер</a></li>
+          <li><a href="contacts.html">Байланыс</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__heading">Байланыс</div>
+        <div class="footer__contact-item">📞 +7 700 123 45 67</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const links = document.querySelector('.nav__links');
+    if (links) links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+  }
+</script>
 
 </body>
 </html>
