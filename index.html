@@ -1,103 +1,79 @@
 <!DOCTYPE html>
 <html lang="kk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Master Astana — Кәсіби Шебер | Басты бет</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Найриятқа арнау ✨</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400&display=swap');
+
+        body {
+            margin: 0;
+            background: #1a0f0f; /* Lou Lou стиліндегі терең қызыл/қара реңк */
+            color: #f4e4d7;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container {
+            padding: 40px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 20px;
+            background: rgba(40, 20, 20, 0.8);
+            backdrop-filter: blur(10px);
+            max-width: 500px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #d4af37; /* Алтын түс */
+            margin-bottom: 10px;
+        }
+
+        p { font-size: 1.2rem; line-height: 1.6; margin-bottom: 30px; }
+
+        .date {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+            border-bottom: 2px solid #d4af37;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: #d4af37;
+            color: #1a0f0f;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover { background: #fff; transform: scale(1.05); }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
 </head>
 <body>
 
-<nav class="nav">
-  <div class="nav__inner container">
-    <a href="index.html" class="nav__logo">
-      <span class="nav__logo-name">Master Astana</span>
-      <span class="nav__logo-sub">Кәсіби Шебер · Астана</span>
-    </a>
-    <ul class="nav__links">
-      <li><a href="index.html" class="active">Басты бет</a></li>
-      <li><a href="services.html">Қызметтер</a></li>
-      <li><a href="contacts.html">Байланыс</a></li>
-    </ul>
-    <a href="tel:+77001234567" class="nav__cta">📞 +7 700 123 45 67</a>
-    <div class="nav__hamburger" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </div>
-  </div>
-</nav>
-
-<section class="hero">
-  <div class="hero__bg">
-    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1600&h=900&fit=crop" alt="Сварка жұмысы" />
-  </div>
-  <div class="hero__overlay"></div>
-  <div class="hero__content container">
-    <div class="hero__badge">✦ Астанада 10+ жыл жұмыс тәжірибесі</div>
-    <h1 class="hero__title">
-      Үйіңіздегі кез келген<br />
-      <em>жұмысты шешеміз</em>
-    </h1>
-    <p class="hero__subtitle">
-      Сварка, сантехника, электр монтажы — жылдам, сапалы, кепілдікпен.
-      Астана бойынша шығамыз, материалдарды өзіміз әкелеміз.
-    </p>
-    <div class="hero__actions">
-      <a href="contacts.html" class="btn btn-primary">🔧 Шебер шақыру</a>
-      <a href="services.html" class="btn btn-outline">Қызметтер мен бағалар →</a>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="about__grid">
-      <div class="about__image-wrap">
-        <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&h=600&fit=crop" alt="Шебер жұмыста" loading="lazy" />
-        <div class="about__image-badge">ISO 9001 · Сертификатталған</div>
-      </div>
-      <div class="about__text">
-        <span class="section-label">Біз туралы</span>
-        <h2>Сенімді шебер —<br /><span>нәтижеге кепілдік</span></h2>
-        <span class="gold-line"></span>
-        <ul class="about__list">
-          <li><span class="about__list-icon">✓</span>Барлық жұмыстарға 2 жыл жазбаша кепілдік береміз</li>
-          <li><span class="about__list-icon">✓</span>Лицензияланған мамандар, ресми шарт жасасамыз</li>
-          <li><span class="about__list-icon">✓</span>Жұмыс аяқталғаннан кейін ғана ақы аламыз</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer__grid">
-      <div>
-        <div class="footer__brand-name">Master Astana</div>
-        <p class="footer__brand-desc">Астана қаласы бойынша кәсіби шеберлік қызметтері.</p>
-      </div>
-      <div>
-        <div class="footer__heading">Навигация</div>
-        <ul class="footer__links">
-          <li><a href="index.html">Басты бет</a></li>
-          <li><a href="services.html">Қызметтер</a></li>
-          <li><a href="contacts.html">Байланыс</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="footer__heading">Байланыс</div>
-        <div class="footer__contact-item">📞 +7 700 123 45 67</div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script>
-  function toggleMenu() {
-    const links = document.querySelector('.nav__links');
-    if (links) links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
-  }
-</script>
+<div class="container">
+    <h1>Найрият ✨</h1>
+    <p>Сені "Lou Lou"-дың ерекше атмосферасында кездесуге шақырғым келеді.</p>
+    <div class="date">07.06.2026</div>
+    <p>Бұл кеш тек біз үшін болады.</p>
+    <button class="btn" onclick="alert('Найрият, жауабыңды күтемін! ❤️')">Келісемін!</button>
+</div>
 
 </body>
 </html>
